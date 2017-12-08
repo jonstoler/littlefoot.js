@@ -1,0 +1,10 @@
+pages:
+  stage: deploy
+  script:
+  - cp littlefoot.min.js public
+  - cp littlefoot.min.css public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
